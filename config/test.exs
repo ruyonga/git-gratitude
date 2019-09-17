@@ -17,3 +17,7 @@ config :git_gratitude, GitGratitude.Repo,
   database: "git_gratitude_test",
   hostname: "localhost",
   pool: Ecto.Adapters.SQL.Sandbox
+
+
+config :git_gratitude, api_client: GitGratitude.GitHubApi.ApiClientBehaviour
+config :git_gratitude, http_adatper:  HttpMock

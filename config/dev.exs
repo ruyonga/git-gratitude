@@ -41,3 +41,8 @@ config :git_gratitude, GitGratitude.Repo,
   database: "git_gratitude_dev",
   hostname: "localhost",
   pool_size: 10
+
+config :git_gratitude, api_client: GitGratitude.GithubApi.GithubApi
+
+config :git_gratitude, http_adatper:  GitGratitude.GithubApi.HttpAdapter
+
